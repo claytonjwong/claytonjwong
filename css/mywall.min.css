@@ -651,7 +651,7 @@ p.extend-details {
   margin-bottom: 20px;
 }
 .title-four {
-  font-size: 50px;
+  font-size: 36px;
   font-weight: 300;
   margin-bottom: 35px;
 }
@@ -2662,7 +2662,7 @@ h1.jprt-item-title {
     float: none;
     padding: 20px;
     border-radius: 50%;
-    border: 2px solid #fff;
+    border: 2px solid #000;
     margin-left: 10px;
     margin-bottom: 10px;
     display: inline-block;
