@@ -6,7 +6,7 @@
 	<meta name="viewport" content="width=device-width,initial-scale=1" />
 	<meta name="robots" content="index, follow"/>
 	<title>Clayton Wong</title>
-	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="shortcut icon" href="favicon.ico?v=<?php echo md5_file('favicon.ico') ?>" />
 
 	<!-- Google Font Roboto -->
 	<link href="http://fonts.googleapis.com/css?family=Roboto:500,400italic,100,300,700,100italic,300italic,400" rel="stylesheet" type="text/css">
@@ -25,9 +25,9 @@
 
 
 	<!-- Header -->
-	<header>
+	<header id="top">
 		<!-- Menu Navigation -->
-		<div id="top" class="container">
+		<div class="container">
 			<!-- Menu left -->
 			<nav id="ha-header" class="left-nav ha-header">
 				<ul class="nav">
@@ -41,9 +41,9 @@
 			        </a>
 			        <!-- Navigation Sections -->
 			        <ul class="dropdown-menu">
-						<li><a data-scroll data-options='{ "easing": "easeOutQuint" }' href="#top" class="menu-item wall">Hello</a></li>
-						<li><a data-scroll data-options='{ "easing": "easeOutQuint" }' href="#about" class="menu-item wall">About</a></li>
-						<li><a data-scroll data-options='{ "easing": "easeOutQuint" }' href="#skills" class="menu-item wall">Skillset</a></li>
+						<li><a data-scroll data-options='{ "easing": "easeOutQuint" }' href="#top" class="menu-item wall">Clayton Wong</a></li>
+						<li><a data-scroll data-options='{ "easing": "easeOutQuint" }' href="#about" class="menu-item wall">About Me</a></li>
+						<li><a data-scroll data-options='{ "easing": "easeOutQuint" }' href="#skills" class="menu-item wall">Skills</a></li>
 						<li><a data-scroll data-options='{ "easing": "easeOutQuint" }' href="#education" class="menu-item wall">Experience</a></li>
 						<li><a data-scroll data-options='{ "easing": "easeOutQuint" }' href="#projects" class="menu-item wall">Projects</a></li>
 						<li><a data-scroll data-options='{ "easing": "easeOutQuint" }' href="#download" class="menu-item wall">Social Networks</a></li>
@@ -56,40 +56,27 @@
 
 			<!-- Menu right - Hidden in small devices -->
 			<div class="nav-extra hidden-xs">
-				<!-- Button 'Contact me' -->
-				<a class="hireme button-mywall" data-scroll data-options='{ "easing": "easeOutQuint" }' href="#contacto">Contact me</a>
+				<a class="hireme button-mywall" href="mailto:Clayton@claytonjwong.com">Email</a>
 			</div>
+			<div class="nav-extra hidden-xs">
+				<a class="hireme button-mywall" href="http://www.claytonjwong.com/doc/ClaytonWong.pdf">Resume</a>
+			</div>
+
 			<!-- // Menu right -->
 		</div>
 		<!-- // Menu Navigation -->
 
 		<!-- Personal Details -->
 		<div class="container">
-			<img class="img-circle imgsus" alt="Clayton Wong" src="img/clayton_03.jpg"/>
+			<img class="img-circle imgsus img-responsive" alt="Clayton Wong" src="img/clayton_03.jpg"/>
 			<h1 class="name-boss">Clayton Wong</h1>
 			<h2 class="main-details">Engineer. Developer. Creative. Innovator.</h2>
-			<p class="extend-details"></p>
+			<p class="extend-details">
+			</p>
 		</div>
 		<!-- // Personal Details -->
 	</header>
 	<!-- // Header -->
-	
-	<!-- About Me Intro - Text Type - Hi. I'm ... -->
-	<!--
-	<section id="about" class="cd-intro">
-		<h1 class="cd-headline letters type">
-			
-			<span>Hi. I'm </span>
-			
-			<span class="cd-words-wrapper waiting">
-				<b class="is-visible">Clayton Wong</b>
-				<b>Living in San Diego, CA</b>
-				<b>Working at Qualcomm</b>
-			</span>
-		</h1>
-	</section>
-	-->
-	<!-- // About Me Intro -->
 
 	<!-- About Me Context -->
 	<section id="about" class="full-section my-about">
@@ -97,16 +84,18 @@
 		<article class="container">
 			<div class="row">
 				<!-- Text about me -->
-				<div class="col-md-6">
-					<h2 class="title-main">About Me.</h2>
+				<div class="col-md-12">
+					<h2 class="title-main">About Me</h2>
 					<p class="text-main">
-						I enjoy collaborating with creative engineers, and developing well-written, maintainable code.  I take ownership of complex projects and excel at producing extraordinary results which consistently exceed expectations.  My accomplishments are a direct result of my passion for continual-learning and self-improvement.
+						I enjoy collaborating with creative engineers, and developing <span class="nowrap">well-written</span>, maintainable code.&nbsp; I take ownership of complex problems and excel at producing extraordinary results.&nbsp; My accomplishments consistently exceed expectations and are a direct result of my passion for <span class="nowrap">continual-learning</span> and improvement.
 					</p>
 				</div>
 				<!-- Image right about me -->
+				<!--
 				<div class="col-md-6">
 					<img class="img-responsive" src="img/pexels-work.jpg" alt="working">
 				</div>
+				-->
 			</div>
 		</article>
 		<!-- // Top About me -->
@@ -139,7 +128,7 @@
 					<img class="img-rd" alt="programmer" src="img/programmer.png"/>
 					<h3 class="title-rd">Programmer</h3>
 					<p class="text-rd">
-						I produce consistent results by focusing on the core fundamentals of timely, disciplined, best-practices.</p>
+						I produce consistent results by focusing on the core fundamentals of timely, disciplined, <span class="nowrap">best-practices.</span></p>
 				</div>
 				<!-- Column 2 -->
 				<div class="col-md-4">
@@ -151,7 +140,7 @@
 				<div class="col-md-4">
 					<img class="img-rd" alt="innovator" src="img/rocket.png"/>
 					<h3 class="title-rd">Innovator</h3>
-					<p class="text-rd">I study the end-to-end process of how interesting problems are resolved, and I proactively search for alternative solutions through introspective post-mortem analysis.</p>
+					<p class="text-rd">I study the <span class="nowrap">end-to-end</span> process of how interesting problems are resolved, and I proactively search for alternative processes and solutions through introspective <span class="nowrap">post-mortem</span> analysis.</p>
 				</div>
 			</div>
 		</div>
@@ -162,8 +151,8 @@
 	<section id="skills" class="full-section-two bg-skills">
 		<div class="container">
 			<!-- Text Skills and Abilities -->
-			<h2 class="title-main mywhite">Skills.</h2>
-			<p class="text-main mywhite">I currently work on large scale C/C++ embedded systems, and I develop new code primarily in Python to quickly prototype inventions.  I previously worked at a few startup companies as a full-stack developer.</p>
+			<h2 class="title-main mywhite">Skills</h2>
+			<p class="text-main mywhite">I'm currently working on large scale C/C++ embedded systems, and I'm developing new code in Python to quickly prototype inventions.&nbsp; I've previously worked at a handful of startup companies as a <span class="nowrap">full-stack</span> developer.</p>
 			
 			<div class="row">
 				<!-- Skills percent 1 -->
@@ -288,14 +277,11 @@
 	<section id="education" class="full-section">
 		<!-- Text Education -->
 		<div class="container">
-			<h2 class="title-main">Experience.</h2>
-			<p class="text-main">• I have over <span id="years_of_experience"></span> years of professional software engineering experience at small startup companies as well as large publicly-traded corporations.
+			<h2 class="title-main">Experience</h2>
+			<p class="text-main">I have over <span id="years_of_experience"></span> years of professional software engineering experience at small startup companies as well as large <span class="nowrap">publicly-traded</span> corporations.
 			</p>
-			<p class="text-main">• I'm currently working at Qualcomm, focusing on software engineering and integration of the user-agent end-points within the IP Multimedia Subsystem.</p>
-					
-					<script>document.getElementById('years_of_experience').appendChild(document.createTextNode(new Date().getFullYear() - new Date("08/01/2004").getFullYear()))</script>
-
-			
+			<p class="text-main">I'm currently working at Qualcomm, focusing on software engineering and integration of the <span class="nowrap">user-agent</span> <span class="nowrap">end-points</span> within the IP Multimedia Subsystem.</p>
+			<script>document.getElementById('years_of_experience').appendChild(document.createTextNode(new Date().getFullYear() - new Date("08/01/2004").getFullYear()))</script>
 		</div>
 
 		<!-- Timeline Responsive -->
@@ -358,7 +344,7 @@
 			<div class="cd-timeline-block">
 				<!-- Circle image 64x64 -->
 				<div class="cd-timeline-img my-purple">
-					<img src="img/ed3.png" alt="Bachelor">
+					<img src="img/ed1.png" alt="Bachelor">
 				</div>
 				<!-- Info -->
 				<div class="cd-timeline-content">
@@ -368,15 +354,15 @@
 				</div> 
 			</div> 
 			<!-- The Beginning of Times image -->
+			
 			<div class="cd-timeline-block">
-				<!-- Circle image 64x64 -->
 				<div class="cd-timeline-img my-purple">
 					<img src="img/ed4.png" alt="Times">
 				</div> 
 			</div>
 		</article>
 		<!-- The Beginning of Times item -->
-		<p class="txt-times">The Beginning of Times</p>
+		<!--<p class="txt-times">The Beginning of Times</p>-->
 	</section>
 	<!-- // Education -->
 
@@ -384,8 +370,8 @@
 	<section id="projects" class="full-section-two bg-skills">
 		<!-- Text Projects -->
 		<div class="container">
-			<h2 class="title-main mywhite">Projects.</h2>
-			<p class="text-main mywhite">I spend the majority of my time collaborting with OEMs (Qualcomm's customers) to integrate Qualcomm's IMS solution onto OEM mobile devices. &nbsp;I focus on performance failures by utilizing my understanding of Qualcomm's proprietary application processor and modem processor architectures to hollistically analyze the full-duplex end-to-end media path for audio/video rich-communication sessions.</p>
+			<h2 class="title-main mywhite">Projects</h2>
+			<p class="text-main mywhite">I spend the majority of my time collaborting with OEMs (Qualcomm's customers) to integrate Qualcomm's IMS solution onto OEM mobile devices. &nbsp;I focus on performance failures by utilizing my understanding of Qualcomm's proprietary application processor and modem processor architectures to hollistically analyze the <span class="nowrap">full-duplex</span> <span class="nowrap">end-to-end</span> media path for <span class="nowrap">audio-video</span> <span class="nowrap">rich-communication</span> sessions.</p>
 		
 			
 		<div class="container cont-mg">
@@ -407,7 +393,7 @@
 									<img src="/img/cpp.png" height="100" width="100">
 									<b>C++&nbsp;</b>
 								</a>
-								<li>A compiled language with emphasis on object-oriented design and programming techniques</li>
+								<li>A compiled language with emphasis on <span class="nowrap">object-oriented</span> design and programming techniques</li>
 								<br/>
 								<a href="https://developer.apple.com/xcode/">
 									<img src="/img/xcode.png" height="100" width="100"><b> Xcode&nbsp;</b>
@@ -417,12 +403,12 @@
 							<br/>
 						<h4><b>Projects:</b></h4>
 						<ul>
-							<li><a href="https://en.wikipedia.org/wiki/Voice_over_LTE"><b>Voice over LTE:</b></a> The Public Switched Telephone Network (PSTN) uses circuit-switched telephony between two points for the duration of the call. In contrast, Voice over Internet Protocol (VoIP) uses packet-switched telephony.</li>
+							<li><a href="https://en.wikipedia.org/wiki/Voice_over_LTE"><b>Voice over LTE:</b></a> The Public Switched Telephone Network (PSTN) uses <span class="nowrap">circuit-switched</span> telephony between two points for the duration of the call. In contrast, Voice over Internet Protocol (VoIP) uses <span class="nowrap">packet-switched</span> telephony.</li>
 							<br/>
-							<li><a href="https://en.wikipedia.org/wiki/Rich_Communication_Services"><b>Rich Communications Suite:</b> </a> Communication protocols between mobile-telephone carriers and mobile-devices, intended to replace SMS messages with a rich text-message system, which allows for capability discovery, and the ability to transmit in-call multimedia.
+							<li><a href="https://en.wikipedia.org/wiki/Rich_Communication_Services"><b>Rich Communications Suite:</b> </a> Communication protocols between <span class="nowrap">mobile-telephone</span> carriers and <span class="nowrap">mobile-devices</span>, intended to replace SMS messages with a rich <span class="nowrap">text-message</span> system, which allows for capability discovery, and the ability to transmit <span class="nowrap">in-call</span> multimedia.
 							</li>
 							<br/>
-							<li><a href="https://en.wikipedia.org/wiki/Videotelephony"><b>Video Telephony:</b></a> Full-duplex reception and transmission of audio-video signals by mobile end-points, for real-time communication.
+							<li><a href="https://en.wikipedia.org/wiki/Videotelephony"><b>Video Telephony:</b></a> <span class="nowrap">Full-duplex</span> reception and transmission of <span class="nowrap">audio-video</span> signals by mobile <span class="nowrap">end-points</span>, for <span class="nowrap">real-time</span> communication.
 							</li>
 							<br/>
 						</ul>
@@ -466,7 +452,7 @@
 					<h3>Front-End Web Development</h3>
 					<br/>
 					<a href="index.html">
-						<img src="img/website.png" class="img-responsive" alt="ClaytonJWong.com">
+						<img src="img/claytonjwong.png" class="img-responsive" alt="ClaytonJWong.com">
 					</a>
 					<br/>
 
@@ -474,7 +460,7 @@
 						<br/>
 						<ul>
 							<a href="https://v4-alpha.getbootstrap.com/">
-								<img src="/img/bootstrap.png" height="100" width="100"><b>&nbsp;Bootstrap&nbsp;</b>
+								<img src="/img/bootstrap.png" height="100" width="100"><b>&nbsp;Bootstrap 4&nbsp;</b>
 							</a>
 							<li>Web framework for mobile devices</li>
 							<br/>
@@ -494,7 +480,7 @@
 						<h4 class="title-four color-c">Zooniverse.org</h4>
 						<h3>Citizen Scientist</h3>
 						<br/>
-					<a href="https://www.zooniverse.org/">
+					<a href="https://www.zooniverse.org/projects/ianc2/exoplanet-explorers/about/research">
 						<img src="img/exoplanet.png" class="img-responsive" alt="Zooniverse.org">
 					</a>
 					
@@ -512,7 +498,7 @@
 							<a href="https://en.wikipedia.org/wiki/Statistical_classification">
 								<img src="/img/classification.jpg" height="100" width="100"><b>&nbsp;Classification&nbsp;</b>
 							</a>
-							<li>Identifies which set of categories (sub-populations) a new observation belongs, on the basis of a training set of data containing observations (or instances) whose category membership is known.</li>
+							<li>Identifies which set of categories <span class="nowrap">(sub-populations)</span> a new observation belongs, on the basis of a training set of data containing observations <span class="nowrap">(or instances)</span> whose category membership is known.</li>
 						</ul>
 						<br/>
 
@@ -547,24 +533,30 @@
 		<div class="container">
 			<div class="row">
 				<!-- Social Networks -->
-				<div class="col-sm-12 btn-class col-md-7">
+				<div class="col-sm-12 btn-class">
 					<a href="https://github.com/claytonjwong" class="social-ink">
-						<img class="socl" src="img/github.png" height=100 width=100 alt="github"/>
+						<img class="socl" src="img/github1.png" height=100 width=100 alt="github"/>
 					</a>
 					<a href="https://www.linkedin.com/in/claytonjwong" class="social-ink">
-						<img class="socl" src="img/linkedin.png" height=100 width=100 alt="linkedin"/>
+						<img class="socl" src="img/linkedin1.png" height=100 width=100 alt="linkedin"/>
 					</a>
+					<!--
 					<a href="https://www.pinterest.com/claytonjwong" class="social-ink">
-						<img class="socl" src="img/pintrest.png" height=100 width=100 alt="pintrest"/>
+						<img class="socl" src="img/pintrest1.png" height=100 width=100 alt="pintrest"/>
 					</a>
 					<a href="https://www.facebook.com/claytonwong" class="social-ink">
-						<img class="socl" src="img/facebook.png" height=100 width=100 alt="facebook"/>
+						<img class="socl" src="img/facebook1.png" height=100 width=100 alt="facebook"/>
 					</a>
-
+					-->
 				</div>
-				<!-- Download Resume - CV -->
-				<div class="col-sm-5 btn-class hidden-sm hidden-xs">
-					<a class="btn-dwnld" href="doc/ClaytonWong.pdf">Download Resume</a>
+			</div>
+			<br/>
+			<div class="row">	
+				<div class="container">
+					<!-- Download Resume - CV -->
+					<div class="col-sm-12 btn-class">
+						<a class="btn-dwnld" href="http://www.claytonjwong.com/doc/ClaytonWong.pdf">Download Resume</a>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -576,46 +568,28 @@
 	<section id="contacto" class="full-section-three bg-contact">
 		<div class="container">
 			<!-- Title Contact me -->
-			<h1 class="title-ct">Contact me.</h1>
+			<h1 class="title-ct">Contact Me</h1>
 			<p class="separator-ct"></p>
 			<!-- Localization -->
 			<div class="row">
-				<div class="col-md-6 col-xs-12 txt-center">
-					<p class="icon-ct glyphicon glyphicon-map-marker"></p>
-					<p class="text-ct">I live in <b>San Diego, CA</b></p>
+				<div class="col-xs-12 txt-center">
+					<a href="mailto:Clayton@claytonjwong.com">
+						<p class="icon-ct glyphicon glyphicon-map-marker"></p>
+						<p class="text-ct">I live in <b>San Diego, CA</b></p>
+					</a>
 				</div>
+			</div>
+			<div class="row">
 				<!--Mail -->
-				<div class="col-md-6 col-xs-12 txt-center">
+				<div class="col-xs-12 txt-center">
+					
+					<a href="mailto:Clayton@claytonjwong.com">
 					<p class="icon-ct glyphicon glyphicon-send"></p>
-					<p class="text-ct">claytonjwong@gmail.com</p>
+					<p class="text-ct">Clayton@claytonjwong.com</p>
+					</a>
 				</div>
 			</div>
 		</div>
-		<!-- Contact Form -->
-		<article class="container cntme">
-			<form method="post" action="/envato/mywall/one/send-email.php" id="ContactForm" name="ContactForm" class="validate-form">
-				<!-- Form inputs -->
-				<div class="row">
-					<div class="form-group col-md-6 col-md-offset-3">
-					  <input type="text" class="form-control ct-name" name="name" id="name" placeholder="Your name" required>
-					</div>
-					<div class="form-group col-md-6 col-md-offset-3">
-					  <input type="email" class="form-control ct-mail" name="email" id="email" placeholder="Email" required>
-					</div>
-					<div class="form-group col-md-6 col-md-offset-3">
-					  <textarea class="form-control ct-message" rows="6" name="message" id="message" placeholder="Write anything here..." required></textarea>
-					</div>
-				</div>
-				<!-- Button Send -->
-				<div class="row">
-					<div class="form-group col-md-6 col-md-offset-3">
-						<div id="successmsg"></div>
-						<button type="submit" name="button" id="button" class="btn btnc2 with-br btn-ctc"><span>Send Now</span></button>
-					</div>
-				</div>
-			</form>
-		</article>
-		<!-- // Contact Form -->
 	</section>
 	<!-- // Contact me -->
 
@@ -624,14 +598,21 @@
 		<div class="container padding-footer">
 			<!-- Text Left -->
 			<div class="row">
-				<div class="col-sm-8 foo-left quote">Have a great day!<br>--Clayton</div>
+				<div class="col-sm-8 foo-left">
+					&copy;
+					<span id="copyright">
+						<script>document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()))</script>
+					</span>
+					Clayton Wong
+				</div>
 				<!-- Text Right -->
-				<div class="col-sm-4 foo-right">Hand-crafted from <span class="glyphicon glyphicon-heart" aria-hidden="true"></span> in San Diego, CA.</div>
+				<div class="col-sm-4 foo-right"></div>
 			</div>
 		</div>
 	</footer>
 	<!-- // Footer -->
-
+	
+	
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<!-- Include all compiled plugins (below), or include individual files as needed -->
@@ -648,5 +629,12 @@
 	<script src="js/imagelightbox.min.js"></script>
 	<!-- Send Email -->
 	<script src="js/sendemail.js"></script>
+
+	<!-- use jquery to change all anchor targets to open in new windows -->
+	<script>
+		$("a[href^='http://']").attr("target","_blank");
+		$("a[href^='https://']").attr("target","_blank");
+	</script>
+	
 </body>
 </html>
