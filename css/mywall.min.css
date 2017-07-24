@@ -549,7 +549,6 @@ p.extend-details {
   padding-top: 60px;
   margin-top: 120px;
   margin-bottom: 60px;
-  padding-bottom: 60px;
 }
 .bg-skills {
   background: url('../img/bg_skills.png') no-repeat center center;
@@ -1934,7 +1933,7 @@ h1.jprt-item-title {
 ------------------------------------- */
 
 .full-download {
-  margin-top: 100px;
+  margin-top: -60px;
   background-color: #EC0856;
   padding-top: 100px;
   padding-bottom: 100px;
