@@ -549,6 +549,11 @@ p.extend-details {
   padding-top: 60px;
   margin-top: 120px;
   margin-bottom: 60px;
+  padding-bottom: 60px;
+}
+.full-section-four {
+  width: 100%;
+  padding-top: 60px;
 }
 .bg-skills {
   background: url('../img/bg_skills.png') no-repeat center center;
@@ -1992,6 +1997,7 @@ h1.jprt-item-title {
 }
 .full-section-three {
   width: 100%;
+	margin-top: 100px;
   padding-top: 60px;
   padding-bottom: 60px;
 }
